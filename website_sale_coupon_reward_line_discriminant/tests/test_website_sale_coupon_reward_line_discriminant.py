@@ -1,4 +1,4 @@
-from odoo.tests import Form, common, tagged
+from odoo.tests import Form, common
 from odoo.addons.website.tools import MockRequest
 from odoo.addons.website_sale_coupon.controllers.main import WebsiteSale
 
@@ -53,7 +53,6 @@ class TestWebsiteSaleCouponReward(common.SavepointCase):
         return sale
 
 
-@tagged("-at_install", "post_install")
 class TestWebsiteSaleCouponRewardLineDiscriminant(TestWebsiteSaleCouponReward):
     @classmethod
     def setUpClass(cls):
