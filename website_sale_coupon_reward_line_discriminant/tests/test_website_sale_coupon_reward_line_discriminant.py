@@ -64,4 +64,4 @@ class TestWebsiteSaleCouponRewardLineDiscriminant(TestWebsiteSaleCouponReward):
         with MockRequest(self.env, website=self.website, sale_order_id=website_sale.id):
             self.WebsiteSaleController.cart_update(self.product_b)
             lines_b = website_sale.order_line.filtered(lambda x: x.product_id == self.product_b)
-            self.assertFalse(bool(lines_b[-1].is_reward_line))
+            self.assertFalse(lines_b[-1].is_reward_line)
