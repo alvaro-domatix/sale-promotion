@@ -1,4 +1,5 @@
 from odoo.tests import Form, common
+
 from odoo.addons.website.tools import MockRequest
 from odoo.addons.website_sale_coupon.controllers.main import WebsiteSale
 
